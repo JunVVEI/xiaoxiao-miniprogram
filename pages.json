@@ -1,0 +1,506 @@
+{
+	"lazyCodeLoading": "requiredComponents",
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// 社区主页
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"navigationBarBackgroundColor": "#f5f6fa",
+				"disableScroll": true, //
+				"enablePullDownRefresh": false //
+			}
+		},
+		// 登陆注册页
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true
+			}
+		},
+		// 活动页
+		{
+			"path": "pages/home/activity/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true
+			}
+		},
+		// 创建活动页
+		{
+			"path": "pages/home/createActivity/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true
+			}
+		},
+		// 发帖页
+		{
+			"path": "pages/home/createPost/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 搜索页
+		{
+			"path": "pages/home/search/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 帖子列表展示页
+		{
+			"path": "pages/home/post_list/detail/detail",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 帖子详细页
+		{
+			"path": "pages/home/detailPage/detailPage",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"enablePullDownRefresh": false,
+				"disableScroll": false,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 评论详细页
+		{
+			"path": "pages/home/commentDetailPage/commentDetailPage",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": false,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 活动详细页
+		{
+			"path": "pages/home/activityDetailPage/activityDetailPage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		//发布评论页
+		{
+			"path": "pages/home/createComment/createComment",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"disableScroll": true,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 举报页
+		{
+			"path": "pages/home/reportPage/report",
+			"style": {
+				"navigationBarTitleText": "举报",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		// 社团页
+		{
+			"path": "pages/club/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"enablePullDownRefresh": false,
+				"disableScroll": true
+			}
+		},
+		// 互助详情页
+		{
+			"path": "pages/help/index",
+			"style": {
+				"navigationBarTitleText": "悬赏详情",
+				"disableScroll": false,
+				"backgroundColor":"#f5f6fa"
+			}
+		},
+		// 课表页
+		{
+			"path": "pages/bag/class/index",
+			"style": {
+				"navigationStyle": "custom",
+				"disableScroll": true,
+				"initialRenderingCache": "static",
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 课表登录页
+		{
+			"path": "pages/bag/class/login/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 聊天界面
+		{
+			"path": "pages/chat/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": true,
+				"navigationStyle": "custom"
+			}
+		},
+		// 个人中心
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true,
+				"navigationBarBackgroundColor": "#f5f6fa"
+			}
+		},
+		// 空教室
+		{
+            "path" : "pages/room/index",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "校校",
+				"disableScroll": true,
+                "enablePullDownRefresh": false
+			}
+        }
+    ],
+	"tabBar": {
+		"color": "#7A7E83",
+		// tab 上的文字默认颜色
+		"selectedColor": "#1296db",
+		// tab 上的文字选中时的颜色
+		"borderStyle": "black",
+		// tabbar 上边框的颜色，可选值 black/white
+		"backgroundColor": "#ffffff",
+		// tab 的背景色
+		"list": [{
+				// 最少2个、最多5个 tab
+				"pagePath": "pages/home/index",
+				// 页面路径，必须在 pages 中先定义
+				"iconPath": "static/tabbar/community.png",
+				// 图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px
+				"selectedIconPath": "static/tabbar/community_on.png",
+				// 选中时的图片路径
+				"text": "社区"
+				// tab 上按钮文字
+			},
+			 {
+			 	"pagePath": "pages/club/index",
+			 	// 页面路径，必须在 pages 中先定义
+			 	"iconPath": "static/tabbar/club.png",
+			 	// 图片路径，icon 大小限制为40kb，建议尺寸为 81px * 81px
+			 	"selectedIconPath": "static/tabbar/club_on.png",
+			 	// 选中时的图片路径
+			 	"text": "社团"
+			 	// tab 上按钮文字
+			 },
+			{
+				"pagePath": "pages/bag/class/index",
+				"iconPath": "static/tabbar/course.png",
+				"selectedIconPath": "static/tabbar/course_on.png",
+				"text": "课表"
+				// tab 上按钮文字
+			},
+			{
+				"pagePath": "pages/room/index",
+				"iconPath": "static/tabbar/classRoom.png",
+				"selectedIconPath": "static/tabbar/classRoom_on.png",
+				"text": "教室"
+			},
+//			{
+//				"pagePath": "pages/chat/index",
+//				"iconPath": "static/tabbar/chat.png",
+//				"selectedIconPath": "static/tabbar/chat_on.png",
+//				"text": "聊天"
+//				// tab 上按钮文字
+//			},
+			// {
+			// 	"pagePath": "pages/message/index",
+			// 	"iconPath": "static/message.png",
+			// 	"selectedIconPath": "static/message_on.png",
+			// 	"text": "消息" // tab 上按钮文字
+			// },
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/tabbar/user.png",
+				"selectedIconPath": "static/tabbar/user_on.png",
+				"text": "我的"
+				// tab 上按钮文字
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8",
+		"backgroundColorTop": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"condition": {
+		//模式配置，仅开发期间生效
+		"current": 0,
+		//当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "",
+			//模式名称
+			"path": "pages/home/index",
+			//启动页面，必选
+			"query": ""
+			//启动参数，在页面的onLoad函数里面得到
+		}]
+	},
+	"subPackages": [
+		{
+			"root": "pages/doc",
+			"pages": [
+				// 文档页
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "文档",
+						"disableScroll": false
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/message",
+			"pages": [
+				// 文档页
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "消息",
+						"disableScroll": false
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/club_subPackage",
+			"pages": [
+				// 添加或编辑社团
+				{
+					"path": "addOrEditClub/index",
+					"style": {
+						"navigationBarTitleText": "社团",
+						"disableScroll": false,
+						"backgroundColor":"#f5f6fa"
+					}
+				},
+				// 社团页
+				{
+					"path": "detailClub/index",
+					"style": {
+						"navigationBarTitleText": "社团详情",
+						"disableScroll": false, //删除此项: mescroll-body必须允许原生页面滚动, 默认false
+						"enablePullDownRefresh": false ,//删除此项: 不开启系统自带的下拉刷新, 默认false
+						"backgroundColor":"#f5f6fa"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/help_subPackage",
+			"pages": [
+				// 发布互助页
+				{
+					"path": "createHelp/index",
+					"style": {
+						"navigationBarTitleText": "发起悬赏",
+						"disableScroll": false,
+						"backgroundColor":"#f5f6fa"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/mine_subPackage1",
+			"pages": [
+				// 反馈页
+				{
+					"path": "feedback/index",
+					"style": {
+						"navigationBarTitleText": "意见反馈",
+						"disableScroll": false
+					}
+				},
+				// 文档页
+				{
+					"path": "info/index",
+					"style": {
+						"navigationBarTitleText": "个人信息详情",
+						"disableScroll": false
+					}
+				},
+				// 个人信息编辑页
+				{
+					"path": "info/edit/index",
+					"style": {
+						"navigationBarTitleText": "编辑资料",
+						"disableScroll": true
+					}
+				},
+				// 编辑姓名页
+				{
+					"path": "info/edit/detail/name",
+					"style": {
+						"navigationBarTitleText": "校校",
+						"disableScroll": true
+					}
+				},
+				// 编辑性别页
+				{
+					"path": "info/edit/detail/sex",
+					"style": {
+						"navigationBarTitleText": "校校",
+						"disableScroll": true
+					}
+				},
+				// 编辑生日页
+				{
+					"path": "info/edit/detail/birth",
+					"style": {
+						"navigationBarTitleText": "校校",
+						"disableScroll": true
+					}
+				},
+				// 编辑学校页
+				{
+					"path": "info/edit/detail/school",
+					"style": {
+						"navigationBarTitleText": "学校认证"
+					}
+				},
+				// 粉丝页
+				{
+					"path": "fans/index",
+					"style": {
+						"navigationBarTitleText": "我的粉丝",
+						"disableScroll": true
+					}
+				},
+				// 关注页
+				{
+					"path": "follow/index",
+					"style": {
+						"navigationBarTitleText": "我的关注",
+						"disableScroll": true
+					}
+				},
+				// 浏览记录页
+				{
+					"path": "history/index",
+					"style": {
+						"navigationBarTitleText": "浏览记录",
+						/* wx自带的下拉刷新上拉加载需要在.json文件中打开 */
+						"enablePullDownRefresh": true,
+						/* 配置属性 */
+						"onReachBottomDistance": 50,
+						"disableScroll": true
+					}
+				},
+				// 点赞页
+				{
+					"path": "likeHistory/index",
+					"style": {
+						"navigationBarTitleText": "点赞历史",
+						/* wx自带的下拉刷新上拉加载需要在.json文件中打开 */
+						"enablePullDownRefresh": true,
+						/* 配置属性 */
+						"onReachBottomDistance": 50,
+						"disableScroll": true
+					}
+				},
+				// 我的悬赏任务
+				{
+					"path": "myHelp/index",
+					"style": {
+						"navigationBarTitleText": "我的悬赏任务",
+						/* 配置属性 */
+						"onReachBottomDistance": 50,
+						"disableScroll": true
+					}
+				},
+				// 草稿箱页
+				{
+					"path": "draft/index",
+					"style": {
+						"navigationBarTitleText": "草稿箱",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 社区身份页
+				{
+					"path": "identity/index",
+					"style": {
+						"navigationBarTitleText": "我的匿名身份",
+						"enablePullDownRefresh": false,
+						"disableScroll": true
+					}
+				},
+				// 随机头像库
+				{
+					"path": "identity/avatarlib/index",
+					"style": {
+						"navigationBarTitleText": "随机头像库",
+						"enablePullDownRefresh": false,
+						"disableScroll": true
+					}
+				},
+				{
+					"path": "homePage/others",
+					"style": {
+						"navigationBarTitleText": "他人主页",
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "homePage/anonymity",
+					"style": {
+						"navigationBarTitleText": "匿名主页",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 登录页
+				{
+					"path": "login/index",
+					"style": {
+						"navigationBarTitleText": "校校",
+						"disableScroll": true
+					}
+				},
+				// 用户设置页面
+				{
+					"path": "setting/index",
+					"style": {
+						"navigationBarTitleText": "用户设置",
+						"disableScroll": true
+					}
+				}
+			]
+		}
+	],
+	// 预分包配置
+	"preloadRule": {
+		"pages/mine/index": {
+			"network": "all",
+			"packages": [
+				"pages/mine_subPackage1"
+			]
+		}
+	}
+}
